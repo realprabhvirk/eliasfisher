@@ -1,17 +1,16 @@
 /* Elias Fisher Sports & Remedial Massage Therapy
-   Colors sampled directly from the client's branded graphic (elias fisher.jpg):
-   icon blue ~#35B6FA, pattern/headline green ~#3FEB3D. Deep variants are
-   darkened for WCAG AA text contrast on white (checked, both pass 4.5:1+). */
+   Palette taken from the client's logo: deep forest green #024805 (sampled
+   from logo file). Mid green and tints are derived from it; all text pairs
+   pass WCAG AA on white. */
 :root {
-  --green-primary: #3AD936;
-  --green-deep: #1E7A16;
-  --blue-primary: #3AB6F0;
-  --blue-deep: #1D6E9E;
+  --green-primary: #5FA85F;
+  --green-mid: #1F6B2A;
+  --green-deep: #024805;
   --white: #FFFFFF;
   --charcoal: #1A1A1A;
   --charcoal-soft: #4A4A4A;
-  --border-soft: #E4EFE3;
-  --surface-tint: #F4FBF3;
+  --border-soft: #DCE8DA;
+  --surface-tint: #F1F6F0;
 
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -68,7 +67,7 @@ p {
 }
 
 a {
-  color: var(--blue-deep);
+  color: var(--green-mid);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
@@ -96,7 +95,7 @@ ul {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-  outline: 3px solid var(--blue-deep);
+  outline: 3px solid var(--green-mid);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -147,18 +146,18 @@ input:focus-visible {
 
 .btn-primary:hover {
   color: var(--white);
-  background: #196512;
+  background: #013803;
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--blue-deep);
-  border-color: var(--blue-primary);
+  color: var(--green-mid);
+  border-color: var(--green-primary);
 }
 
 .btn-secondary:hover {
-  color: var(--blue-deep);
-  background: rgba(58, 182, 240, 0.1);
+  color: var(--green-mid);
+  background: rgba(2, 72, 5, 0.06);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -214,7 +213,7 @@ input:focus-visible {
   font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--blue-deep);
+  color: var(--green-mid);
   letter-spacing: 0.02em;
 }
 
@@ -280,7 +279,7 @@ input:focus-visible {
 }
 
 .nav-call:hover {
-  background: #196512;
+  background: #013803;
   color: var(--white) !important;
 }
 
@@ -349,7 +348,7 @@ input:focus-visible {
   position: absolute;
   inset: -34%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(58, 217, 54, 0.16) 0%, rgba(58, 182, 240, 0.12) 45%, rgba(58, 182, 240, 0) 72%);
+  background: radial-gradient(circle, rgba(95, 168, 95, 0.18) 0%, rgba(95, 168, 95, 0.08) 45%, rgba(95, 168, 95, 0) 72%);
   opacity: 0;
   transform: scale(0.6);
   animation: haloBloom 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -419,20 +418,6 @@ input:focus-visible {
     opacity: 1;
     transform: none;
   }
-}
-
-.hero-wordmark {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.05;
-}
-
-.hero-wordmark .word-green {
-  color: var(--green-deep);
-}
-
-.hero-wordmark .word-blue {
-  color: var(--blue-deep);
 }
 
 .hero h1 {
@@ -611,7 +596,7 @@ section {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 2.4rem;
-  color: var(--blue-deep);
+  color: var(--green-mid);
   display: block;
 }
 
@@ -639,7 +624,7 @@ section {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--blue-deep);
+  color: var(--green-mid);
 }
 
 /* ---------- Service detail blocks (services.html) ---------- */
@@ -801,6 +786,6 @@ section {
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--blue-deep);
+  color: var(--green-mid);
   margin-bottom: 0.8em;
 }
